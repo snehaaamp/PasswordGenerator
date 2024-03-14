@@ -1,0 +1,45 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pswrd-Gen</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@200;300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Generate a <br />
+        <span id="h1-l2">random password.</span>
+      </h1>
+      <p>Never use an insecure password again.</p>
+      <div class="button-box">
+        <button id="create-btn" onclick="generatePass()">
+          Create Password
+        </button>
+        <button id="length-btn" onclick="subtractPassLength()">-</button>
+        <p id="pass-length"></p>
+        <button id="length-btn" onclick="addPassLength()">+</button>
+      </div>
+      <hr id="line" />
+      <div class="display-pass">
+        <div id="pass-containers">
+          <p id="password1"></p>
+        </div>
+        <div id="pass-containers">
+          <p id="password2"></p>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
